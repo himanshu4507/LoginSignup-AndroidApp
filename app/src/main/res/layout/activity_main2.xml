@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:layout_width="232dp"
+        android:layout_height="232dp"
+        android:id="@+id/image"
+        android:src="@drawable/my_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="89dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:id="@+id/forget"
+        android:text="@string/forget_password"
+        android:fontFamily="@font/mulish"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="313dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/phonenumber"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/phone_number_or_email"
+        android:background="@drawable/rounded_edittext_background"
+        app:layout_constraintTop_toBottomOf="@id/forget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/pass"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:background="@drawable/rounded_edittext_background"
+        app:layout_constraintTop_toBottomOf="@id/phonenumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/btn1"
+        android:text="@string/sign_in"
+        android:backgroundTint="#1983FF"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pass"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:id="@+id/or"
+        android:text="@string/or"
+        android:fontFamily="@font/mulish"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/google"
+        android:text="@string/sign_in_with_google"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:textColor="@color/black"
+
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#F5F7FA"
+        android:drawableLeft="@drawable/google1"
+        android:drawablePadding="80dp"
+        app:layout_constraintTop_toBottomOf="@id/or"
+        />
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="48dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginStart="24dp"-->
+    <!--        android:layout_marginEnd="24dp"-->
+    <!--        android:id="@+id/google"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/or"-->
+    <!--        android:background="?attr/selectableItemBackground"-->
+    <!--        android:clickable="true"-->
+    <!--        android:focusable="true"-->
+    <!--        android:backgroundTint="#F5F7FA"-->
+    <!--        android:gravity="center"-->
+    <!--        tools:ignore="ExtraText">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/google_icon"-->
+    <!--            android:layout_width="24dp"-->
+    <!--            android:layout_height="24dp"-->
+    <!--            android:src="@drawable/google1"  &lt;!&ndash; Use your vector drawable here &ndash;&gt;-->
+    <!--        android:contentDescription="Google Sign In" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/google_text"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="@string/sign_in_with_google"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:layout_marginStart="8dp"-->
+    <!--            android:layout_gravity="center_vertical" />-->
+    <!--    </LinearLayout>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:text="@string/Terms"
+        android:id="@+id/term"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toBottomOf="@id/google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        tools:ignore="NotSibling" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:id="@+id/conditions"
+        android:text="@string/terms_and_conditions"
+        app:layout_constraintTop_toBottomOf="@id/term"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/term"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:id="@+id/signup_text"
+        android:text="@string/new_here_sign_up"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
