@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             public void updateDrawState(@NonNull TextPaint ds) {
                 super.updateDrawState(ds);
                 ds.setUnderlineText(false); // Remove underline
-                ds.setColor(Color.BLUE); // Set text color
+                ds.setColor(Color.parseColor("#1983FF")); // Set text color
             }
         };
         int start=text.indexOf("Log In");
